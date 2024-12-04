@@ -5,6 +5,17 @@
 /* Custom Styles */
 @layer components {
   .nav__link {
-    @apply relative text-base text-white font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:bottom-0 after:left-0 after:origin-right;
+    @apply relative text-base text-white font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:bottom-0 after:left-0 after:origin-right;
+  }
+
+  .btn__primary {
+    @apply md:px-8 md:py-3 px-6 py-2 text-white text-sm md:text-lg font-semibold bg-indigo-700 rounded-lg hover:bg-indigo-800 transition-all duration-300 delay-300 ease-in-out;
+  }
+
+  .text__bg {
+    background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

@@ -28,7 +28,7 @@ const Navbar = ({ openNav }: NavType) => {
   return (
     <div
       className={`${
-        navBg ? 'bg-[#240b69]' : 'fixed'
+        navBg ? 'bg-secondary' : 'fixed'
       } fixed h-[12vh] z-[10]  shadow-md w-full transition duration-200`}
     >
       <div className="flex items-center justify-between h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
@@ -57,11 +57,7 @@ const Navbar = ({ openNav }: NavType) => {
           </div>
           {/* Nav End */}
           <div className="flex items-center space-x-4">
-            <button
-              className="md:px-10 md:py-3 py-3 px-8 text-blue-800 bg-white font-semibold text-sm sm:text-base hover:bg-gray-200 transition-all duration-300 ease-in-out rounded-lg
-            
-            "
-            >
+            <button className="md:px-10 md:py-3 py-3 px-8 btn__primary">
               Hire Me
             </button>
             {/* Hamburger */}
