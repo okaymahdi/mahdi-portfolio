@@ -1,5 +1,7 @@
+'use client'
 import { NavLinks } from '@/app/Constants/Constants'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
 // Define the Nav Type
@@ -8,8 +10,27 @@ type NavType = {
 }
 
 const Navbar = ({ openNav }: NavType) => {
+  const [navBg, setNavBg] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setNavBg(true)
+      } else {
+        setNavBg(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
-    <div className="fixed h-[12vh] z-[10] bg-blue-950 shadow-md w-full">
+    <div
+      className={`${
+        navBg ? 'bg-[#240b69]' : 'fixed'
+      } fixed h-[12vh] z-[10]  shadow-md w-full transition duration-200`}
+    >
       <div className="flex items-center justify-between h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
         <Link href="/">
