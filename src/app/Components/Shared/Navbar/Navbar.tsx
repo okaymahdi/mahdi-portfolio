@@ -14,7 +14,7 @@ const Navbar = ({ openNav }: NavType) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 60) {
         setNavBg(true)
       } else {
         setNavBg(false)
@@ -28,7 +28,7 @@ const Navbar = ({ openNav }: NavType) => {
   return (
     <div
       className={`${
-        navBg ? 'bg-secondary' : 'fixed'
+        navBg ? 'bg-slate-900' : 'fixed'
       } fixed h-[12vh] z-[10]  shadow-md w-full transition duration-200`}
     >
       <div className="flex items-center justify-between h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">

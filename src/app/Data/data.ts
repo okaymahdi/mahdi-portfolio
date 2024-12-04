@@ -3,7 +3,7 @@ export const BaseInfo = {
   position: 'Junior Front-End Web Developer',
   description:
     'Highly Motivated Junior Front-End Web Developer with a Strong Foundation in HTML, CSS, JavaScript. Eager to Contribute to Creativity and Technical Skills to Dynamic Projects Enhancing Experiences Through Responsive and Visually Appealing Web Design Interface.',
-  profilePic: '/images/profile.png',
+  profilePic: '/images/porfile.png',
 }
 
 export const aboutInfo = {
