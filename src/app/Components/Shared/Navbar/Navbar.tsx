@@ -34,9 +34,7 @@ const Navbar = ({ openNav }: NavType) => {
       <div className="flex items-center justify-between h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
         <Link href="/">
-          <h2 className="text-2xl font-bold text-white uppercase lg-[-1.5rem] sm:ml-0">
-            Mahdi
-          </h2>
+          <h2 className="heading__title lg-[-1.5rem]">Mh</h2>
         </Link>
 
         {/* Nav Start */}

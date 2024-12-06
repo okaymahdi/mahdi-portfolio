@@ -12,7 +12,7 @@ export default {
         primary: '#FF6B6B',
         secondary: '#240b69',
         tertiary: '#0f0715',
-        quaternary: '#8750f7',
+        quaternary: '#050709',
         quinary: '#82368C',
         senary: '#FF6B6B',
         septenary: '#FFD166',
